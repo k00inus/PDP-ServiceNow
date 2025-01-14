@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7377611ec38fd210554f98bc0501310e" label="Goal Tasks" max_length="40" name="x_1563428_personal_goal_tasks" type="collection">
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress"/>
+                <element inactive_on_update="false" label="Completed"/>
+                <element inactive_on_update="false" label="Upcoming"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Task Title" max_length="50" name="task_title" type="string"/>
+        <element label="Goal" max_length="32" name="goal" reference="x_1563428_personal_goals" type="reference"/>
+        <index name="index">
+            <element name="goal"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7c69e99ec38fd210554f98bc0501319c" label="Feedback" max_length="40" name="x_1563428_personal_feedback" type="collection">
+        <element label="Submitted by" max_length="32" name="submitted_by" reference="sys_user" type="reference"/>
+        <element label="Goals" max_length="32" name="goals" reference="x_1563428_personal_goals" type="reference"/>
+        <element label="Feedback Text" max_length="500" name="feedback_text" type="string"/>
+        <element label="Date" max_length="40" name="date" type="glide_date_time"/>
+        <index name="index">
+            <element name="goals"/>
+        </index>
+        <index name="index2">
+            <element name="submitted_by"/>
+        </index>
+    </element>
+</database>
