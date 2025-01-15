@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Personal Development">012d9556834b52101bbe9065eeaad3da</application>
+        <application display_value="Personal Development Plan">012d9556834b52101bbe9065eeaad3da</application>
         <assessment/>
         <device_type/>
         <filter/>
@@ -18,7 +18,7 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_1563428_personal.goal_tasks_user</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-14 11:07:53</sys_created_on>

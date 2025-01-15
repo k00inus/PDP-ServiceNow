@@ -4,7 +4,7 @@
         <can_share>false</can_share>
         <can_write>false</can_write>
         <dashboard display_value="My Objectives">76059762c30b5610554f98bc05013173</dashboard>
-        <group display_value="PDP Student" name="PDP Student">dcd0fa6ac3875610554f98bc05013187</group>
+        <group display_value="">dcd0fa6ac3875610554f98bc05013187</group>
         <owner>false</owner>
         <role/>
         <sys_class_name>par_dashboard_permission</sys_class_name>

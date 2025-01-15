@@ -31,7 +31,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-01-14 11:14:12</sys_updated_on>
         <update_access>false</update_access>
-        <user_role display_value="x_1563428_personal.feedback_user" name="x_1563428_personal.feedback_user">0c79299ec38fd210554f98bc0501317a</user_role>
+        <user_role/>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>

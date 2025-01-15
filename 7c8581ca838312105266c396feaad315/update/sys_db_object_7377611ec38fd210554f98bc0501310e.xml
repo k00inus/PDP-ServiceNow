@@ -31,7 +31,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-01-14 11:07:52</sys_updated_on>
         <update_access>false</update_access>
-        <user_role display_value="x_1563428_personal.goal_tasks_user" name="x_1563428_personal.goal_tasks_user">17f72ddac38fd210554f98bc05013108</user_role>
+        <user_role/>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>

@@ -8,19 +8,19 @@
             </choice>
         </element>
         <element label="Percent Completed" max_length="20" name="percent_completed" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="high" label="Priority" max_length="40" name="priority" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Low" value="low"/>
-                <element inactive_on_update="false" label="High " value="high"/>
                 <element inactive_on_update="false" label="Medium" value="medium"/>
+                <element inactive_on_update="false" label="High " value="high"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Name of Goal" max_length="80" name="name" type="string"/>
-        <element label="Students" max_length="32" name="students" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Student Name" max_length="32" name="students" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="students"/>
         </index>
