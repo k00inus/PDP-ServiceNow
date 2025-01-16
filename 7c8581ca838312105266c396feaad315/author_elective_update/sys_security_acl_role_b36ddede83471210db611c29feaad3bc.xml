@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 15:01:30</sys_created_on>
+        <sys_id>b36ddede83471210db611c29feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1563428_personal_goal_tasks.x_1563428_personal.pdp_student</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_security_acl display_value="x_1563428_personal_goal_tasks">e3f7a91ec38fd210554f98bc0501315f</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b36ddede83471210db611c29feaad3bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 15:01:30</sys_updated_on>
+        <sys_user_role display_value="x_1563428_personal.pdp_student" name="x_1563428_personal.pdp_student">07e5414e838312105266c396feaad317</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</application>
+        <file_path/>
+        <instance_id>c3145aafdbfdf590199b1729139619ff</instance_id>
+        <instance_name>dev187933</instance_name>
+        <name>sys_security_acl_role_b36ddede83471210db611c29feaad3bc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-14 15:01:30</sys_created_on><sys_id>b36ddede83471210db611c29feaad3bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1563428_personal_goal_tasks.x_1563428_personal.pdp_student</sys_name><sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package><sys_policy/><sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope><sys_security_acl display_value="x_1563428_personal_goal_tasks">e3f7a91ec38fd210554f98bc0501315f</sys_security_acl><sys_update_name>sys_security_acl_role_b36ddede83471210db611c29feaad3bc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-14 15:01:30</sys_updated_on><sys_user_role display_value="x_1563428_personal.pdp_student" name="x_1563428_personal.pdp_student">07e5414e838312105266c396feaad317</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-244528136</payload_hash>
+        <record_name>x_1563428_personal_goal_tasks.x_1563428_personal.pdp_student</record_name>
+        <reverted_from/>
+        <source>5e5a55de83031210db611c29feaad3bf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 15:01:30</sys_created_on>
+        <sys_id>357d961283871210db611c29feaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194655583ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 15:01:30</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>397d9612b2871210d759b4d4e5b0ba12</update_guid>
+        <update_guid_history>397d9612b2871210d759b4d4e5b0ba12:-244528136</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1563428_personal_goal_tasks.x_1563428_personal.pdp_student">9abede5283871210db611c29feaad3a7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 15:07:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>05110710e0944cc982c8d0fabb2fe0b1</sys_id>
+        <sys_metadata>b36ddede83471210db611c29feaad3bc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1563428_personal_goal_tasks.x_1563428_personal.pdp_student</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_parent display_value="x_1563428_personal_goal_tasks">e3f7a91ec38fd210554f98bc0501315f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_scope_delete display_value="">058642f3d3b34b4687af8f490b6f81c9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_b36ddede83471210db611c29feaad3bc</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_b36ddede83471210db611c29feaad3bc">357d961283871210db611c29feaad313</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 15:07:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

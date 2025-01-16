@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3968000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>A flow to Notify Trainers by email When a Student Creates a Goal or Goal Task, so they are aware and can go and check it out.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>notify_trainers_when_a_student_creates_a_goal_or_goal_task</internal_name>
+        <label_cache>[{"name":"b6d577be-f4a6-43d8-8d1e-6e58dc996727.Records","label":"1 - Look Up Records➛Group Records","reference":"sys_user_group","reference_display":"Group Records","type":"records","base_type":"records","usedInstances":{"b161f44d-dd7f-45de-bed0-3ae6140dd4de":["condition"],"70077da5-9933-4a99-aac0-59ebe1f23586":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70077da5-9933-4a99-aac0-59ebe1f23586.item.email","label":"2 - For Each➛Group Record➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email","usedInstances":{"62d24bb0-8d65-42ef-a089-839a323b9255":["ah_to"]}},{"name":"70077da5-9933-4a99-aac0-59ebe1f23586.item","label":"2 - For Each➛Group Record","reference":"sys_user_group","reference_display":"Group Record","type":"reference","base_type":"reference","usedInstances":{"62d24bb0-8d65-42ef-a089-839a323b9255":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>63f24fe683c3d2101bbe9065eeaad301</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Notify Trainers If Student Creates Goal</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3ff24fe683c3d2101bbe9065eeaad339</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 11:17:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ed33e668383d2101bbe9065eeaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notify Trainers If Student Creates Goal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name>sys_hub_flow_7ed33e668383d2101bbe9065eeaad380</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 15:14:18</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1563428_personal_goals">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3ff24fe683c3d2101bbe9065eeaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:58</sys_updated_on>
+        <table>x_1563428_personal_goals</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>7ed33e668383d2101bbe9065eeaad380</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:58</sys_created_on>
+        <sys_id>7bf24fe683c3d2101bbe9065eeaad33a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:58</sys_updated_on>
+        <trigger display_value="">3ff24fe683c3d2101bbe9065eeaad339</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=7ed33e668383d2101bbe9065eeaad380^sys_idNOT IN7bf24fe683c3d2101bbe9065eeaad33a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7ed33e668383d2101bbe9065eeaad380^sys_idNOT INf2d33e668383d2101bbe9065eeaad383"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7ed33e668383d2101bbe9065eeaad380</id>
+        <name>Notify Trainers When a Student Creates a Goal or Goal Task</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 11:17:49</sys_created_on>
+        <sys_id>f2d33e668383d2101bbe9065eeaad383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 11:17:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f2d33e668383d2101bbe9065eeaad383"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7ed33e668383d2101bbe9065eeaad380^sys_idNOT IN28b107a683c3d2101bbe9065eeaad35a,acb107a683c3d2101bbe9065eeaad34f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</model>
+        <model_id>7ed33e668383d2101bbe9065eeaad380</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>28b107a683c3d2101bbe9065eeaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:18:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=28b107a683c3d2101bbe9065eeaad35a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</model>
+        <model_id>7ed33e668383d2101bbe9065eeaad380</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>acb107a683c3d2101bbe9065eeaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:18:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=acb107a683c3d2101bbe9065eeaad34f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=7ed33e668383d2101bbe9065eeaad380^sys_idNOT INe4b107a683c3d2101bbe9065eeaad375"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>e4b107a683c3d2101bbe9065eeaad375</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:56</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+Va33OjNhD+Vxie2pl0hh+2MXm7Ork2M9dLz/G1D5lUI0CymcrCBUHi3uR/78oIjDE42M717NyLZ5DE7n6rb78VGt9/0Rn2CNMv9Qn2GNEv9JALEnPMJssFgWEhhxHHczk3xzzAIoqX+qWIU3KhR3FAYv3SvNAzzFJyt0xuAngJlq7eUK/rahqen5DZH9g9a4gWJE4i8IOmEWYJLAnCZMHw8g+18hc1vMAxmBLSzRfdn4UsiAnXL+8fIFTpy6c+di1i+LZpW5ZhWMOe6Q1sz7QCGxPDABN1iLXYRAPSNTDyJAgPCLiiEBBpSEJMcHDL2bJcMYMc5lmY46ck/BesDw25jhKI3Sf5XPmIFPJ82J9FoU9uFyKMeD6Sx5lPRiyd8495/DJnhOKUiSJnMJImYI8sZMgyCBURvZtFj+PC4fuQr9CpSRb5mJVPWIg49FJBEplwGjJIPcpzk0RpvIp+fD26HV+hP99NRr9ej9H4+m4yvhlNrq/05xUu9E8qLeYRqlhQDue53Oj3IWFyA1XGEz8OF+KdL8KMqGCeL9b0jFMOFlC5G1tEzfNWJvBDmAD8e0BQJGdlEubpB2VynHItgn2DH81PY0iN0ApO0Js5nqqU0t8LCq5SotiT4RihOUqWCZqlHoKkTaeQqZAvUoEcd+iaA9xCSsffSMyqNsD0va4/PMu9Ioz4osI4+jmpPv0WJknIp5UklRglIbchluiAuVqRwRxqcl5YHzbKTy0qatUwWmVomz1ZjRU19ekgPKZJqUeoZTgStWnYHjUNx+hjGtiG4VsV4dl23xqXqLG5Cm6XFKmRLlrU21OLklUdsQ5VU09qEXy1kDtRMtvks7Jjyf1Xkjc6wdBq0m3vpd0lEfPhq00+7oL2ypKPgwzDG0GBsYukdxDvxxnhKCFCyHLeX705lMnqHZw7qYic5LsmE0SjWPsY8Z9u1uu0OwICAnGelcxVJb0LaDAWa28KtReJWb2RSaQ/w/gGUlmkLXv+HfW2WnFlm1k8oLeR3rDvUtt3ADN0M9ojHjZ7Vh+7zsCmbq231dy3B3by3a2jlmStqtTUV7rWatZY8mWHqXWqQ8qhRgxl2n6hr36/STmqoxfV19rQDwn2PJo9ZdEjcOCAPu9h/+9pHKU82JJ/sKmFXFuv0H5Quf3xvJS+2uiAA2Q33s0V54PymH625k9RnJgvD+pkNjU9l/SIAR9nNnQyr++6no8tSp2BQyyz1snWjhujOfn+1aFQsqZKa/scaiRh1sTdPb7Rvn2AR+m6omKjrOdzpy/So4gHocg7bF2ii6lEP7CC/YrxYiv+uv60Xb/54EslPBhgHJA20fJopYSrsBqCEQ0Iv0oJG9/ouje/kD6YaPMoIOxqbU7f6B4yW4+YiwSJCOEgQJU8dmRmjm2PCwPAFx91ayAdExTRane9ijSY0MCJFlJNYSSB5i01MSMgJQxEBRxq0vuZfUVWzxbbyMtD95vGnYvw1t0BDK+QnRewo68FaiV07IGKBA7u922n+WrArR+omkJ4IcKTP2TtrR9Zkxzt/Cjez27dZuNncYX+mxzoeAvwhlF/teNgQxSnfzbcrEsmm+pW552yMCDF3Cvok7KUrXVof2WiQ9fvm06LMg37rcqknO8KTDTA/l9OjrIBKeY0KdTnfOq0/jTwWpx8+A/v4r5PnyIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=7ed33e668383d2101bbe9065eeaad380^sys_idNOT INa4b107a683c3d2101bbe9065eeaad377,a8b107a683c3d2101bbe9065eeaad37b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>a4b107a683c3d2101bbe9065eeaad377</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 14:26:46</sys_updated_on>
+        <ui_id>b6d577be-f4a6-43d8-8d1e-6e58dc996727</ui_id>
+        <values>H4sIAAAAAAAA/9VYbVPbOBD+Kxp/grmM6xDejn66wtFh5iiUcJ25oYxHtpVEV0VyJZkQmPz3W73Zzgs0pNxdyxfwalf7PKtntTY3jxEtoqPocLCbJLi7d3iQJL1ekuzv93LczbLefp4l2W4WdSKOxwQ8Nc4Ygcc7zCrzrKYqrRSR6VCKqoSFgqqS4eknv/7em/MRZYUkPDq6ue1EJZawnSYyOnpcWNLTkqQMZ4RB9LXJhj6Y1J21kc4FLyM3CcJjyt3WQhYGS9KJyL0mvCCQaoCZIp1ojHmBtZDT2iIJLi44awwjyjXsGBnne0UfYPvDxPgNCNDKiVurH1NfImfOR4Lm5KLUVHBncUDdomDVmH9wBExxyQBXTIfiggVqnxakNJgNCI9o0B+JyVVIeEq5pecXmcgxq5+w1pJmlSbKnAVhZAwbpWNclpQP01KKO2qDAcs4HjJ4iAdMTCCpokMe49wAj6FEOD4F+4k1f8KSGhbnsA0EAyDK4LRTV3QlKmmrcpfmrFJ2QWKu3F7RzNYq/VoZlI6155e6EoGDyiUt9W8QcEc8lVlnLTHvJY0kcsELanKqlqLN2ucKQovLk0t0LTHlRKplZT/pt5nUj9tY1uWxMngVOS/6OZsXfffVRA9w/yfZa1n9eKr/lo4d4dViDkYrmubQ4OlZ52hrUHGLDZF7kgO/LcrLSqsOEpU2f2yjx88cwc8dlsje2abMyAnZ/to5MHru68ogVc7yFr15g64IHF9O0ITqEZpCDyMoA5ALvm47ZPuiTmFmwx9U6ZDh5vbtQv6wwskEvTeVviI5SHPLZZ6fL8627bewphgXxceKyKkPCG25c9Bp+M1HfLXuxuaswO14RPIviA6QHhEPi9wDbOU8YGHLxXLola3tuooNk7VpjMk4I3KeicO2SKVF2XOJzT60WAhb5BM4CcZIru0RoLMThQZSjFsEHRDVxEzgdiKG6CqW5iccZlxWamT8jCHWog/NxIcQ0MI1c3/OWkV+V8HtZwE4GmcfkJsLjSIkUdDo83L0EmxOoobBCB+CFq03Qckc3lU7hbTuCf3SEPpbUO6r3pk/mhki0GJr7tz//fzy+q9Wz5xixjLspMWFzacQlgQNRMWL5RLN6dAe3GQkUA63ryaudNLKClGFKLeGue5rKulj3k3/hF36U3VWBMR5JeGC1LH3SLNp6wgtanAHwSDxTRgunb9aYqoCFp/JVSqmHMY83Jxby5i2/c2iKwls4Bb33Ke2SJ6hZzbbBnjRbFYP+vzg2QG518xCJaRO3VRpTfrlmb7x9D6lBKTdflFdA1wIvjCDGGXTp/D64T0wORbeWHd++jfWH3J0A6AidfWmnMGLnRnXAPS7Znqt2+T5F7tfF3Rgj7/1xWVsWOXL6sVIC/Sw+RuoPdeg3zVAhsA+IELXDuUK4OHdM2zvpdt7Nen2dl4mXRDOzWONvq7aigKH70JzdMH/wfjjRX9QVyugO7utpX+8Wc7uS3PumJwLvdl7UXO2leVWTp4Q2Ct/dT7RbJ1/s7tHEOrzpa5Z0wkthkQ32YNXIfQEsy+r1r266h6y9L77C3b32d7b7zZ9Bj2Quinb/oTtwofY8vXQ7TjzZrfDGddkaIu3LsQQeY7vYcIHjCuB+yuC1jm8pndf8dv0vxhvofAruyfU/6f4l82mEr79B2pDmCRTFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>70077da5-9933-4a99-aac0-59ebe1f23586</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>a8b107a683c3d2101bbe9065eeaad37b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 14:26:46</sys_updated_on>
+        <ui_id>62d24bb0-8d65-42ef-a089-839a323b9255</ui_id>
+        <values>H4sIAAAAAAAA/+1X3W7bNhR+FU7XjiNbtmxlV1mDtAXWH7RGh6EpBIqiLC4UqVFUXDfwu+xZ9mQ7lCjLihvHsNOgA3KpQ57/7zuH+nzrsNg5c0bx1PWjZIQnrjf0XHc6DILICxJ3OgncAYmdniNwRuGmokQq832DeWkEt7cT151MYjw+CQLPOxnhIDjBmLgn44BGdJAMvfHU7zNNs9UK9GJW5BwvP1l1kJCU8VhR4Zx9/tJzcqzAk6bKObu9c6SXOQ05jigHxQtJyowKjV5fgI19s2i0Z1jNqUYfmmzuZmdcwXdsnYTMCOHIhOX2HPpVUxFTcJpgXtCek2ERYy3Vci1RFMfvBG8FKRMaTJ4XhSQMa1ognVJEM8w4WjCdIoxq933H2PtasG8Qgjc0phIKRSAmIiYIiyEiZ0Mc2prC8ev2mKSSEfou10yKutAaR7ypueRlJt7WWZuu0ASXXG90pSzALs1NmiZurUrIIfmYysWHxu8lE1VBbIJcEszXX1hrxaIS8qwaySlWrb2wCsnYBE+U06rGGc5zJuZhruQNqwxDmFl/zuGjn3C5AP2CzUUfE5NTHwqO+5cgv6jEn7BiJsE3YAaUV1WBwr9LE1OdYte5uRtWfYerBVEs1+dg+IbaFFY9S45BsAtW8aiFz4bNliDFsgihmCqcK1nm2wx4acWH0WBmXKK3tct9w+0o3xO+ZUBHZgkwOIoAM0C9rulX4x1pG8Ya9FO3C/p7wP7oILeBHozyH4Nk6GsR1gC1uVXOH0T4Q7h2fT+K/Gg88VqgBCSJJ1Hi4wnxWmAsYFypDKvrsBpXG+AebOPZsvpAOIPy6WWVXm/vKBtlGH68jCn6owl3VwYW35GUMJpEC+7hUeCukYi0RNA7voSZvvZshO3E1ynWiBWogHb10UwiZoPf0OihpSxRVhYarmk46dCmsyZGT8IY21orvfhu3/8XlDqWOuPdMxa3wMNpqOVhz6V+hZTVCm1z7EArh3HyI/RDzBs+7pH6msxyuw6WdkVj07LO2826+vWxRbqNheE+r4zOyogpZxmrmlsz81jIxzv7Tt1OqwnZgPwjPvq7UNwjpEbxxYvt+O6B4uiwBfCMxafD4mDnjx71O72OngaMe8TUKP52B43RLjiOn+H4s8NxvLv1pNPsooz+okRvQPIcFbo03hCBNmoaw0tP0AWaS8x/2cbrQ9cfZck/nNFacZ3P93K8B9T+87r/mZ6zeGe7k2F3Wsl4uYHeq9J1PZIjE+GJZmKZEaqk1BGU4bo6jK+cq/oafUU5l2imMBNUFb1aN1LotD6++30f1N9fvEcvDdzNtaEvoiL/9U/4VSJYICENFRCACZGUkmvENJKl7j/ka5Zicb0dknE1ozir5ad5Ld1mpS3Dj0nz33+eOrvDhsir2ZvfmxGyB6bW+7BG1BbE7PBIdcbb0TE5ch/647HnPw+PzYWYL+JhrGSe29yOWopf/gN1Z7RHVBgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7ed33e668383d2101bbe9065eeaad380^sys_idNOT INa8b107a683c3d2101bbe9065eeaad379"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a8b107a683c3d2101bbe9065eeaad378</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>a8b107a683c3d2101bbe9065eeaad379</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 14:26:46</sys_updated_on>
+        <ui_id>70077da5-9933-4a99-aac0-59ebe1f23586</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj9SJ86twFCgh65AV/QyFAYt0YlQWdIkOaln+L+Pip1s6HEnm4/k43siR2b6YPvgX8299/Kg2f7n+4pJHTH6H5mGDtmeyYCdZyt2AtXHeBybUtxttw2u2w2U600hduudyHBd4t1O8Koqt/k2eUFunPDTRK1CeqtgePt/Bn6USjhcRFpwpC2gY/vxSyoMFmsFDSoatDBQvxQUZpVoqyyteJGXRZ6m+W6TNWXRZLkoAEVJddfOx8X0lzeI7BS6Gy99ooo8XTH8DKgF0qAWlMcV60ALCMYNbB9cT4BDEM9aDbeKo9SB6Fis/fTyN3FnaRoLWyRHHOfkLayXh5xhfjSS47MN0ugZCdCopYcb1Xf6+yw/rgBb6FW4roCQ3hMf2qg5qlgktT+O5vxyHfgg9cXfklSGg7pFEIKTTR/QxzWgwo6I6g6slfpQW2dO8tJMWrrkoChIWmXONDSeWwI8Ck/oiSB5IPzbBX4DJ6OLJ6Kh5univv7Vx7mzj0VxPZumAs+dtOGe6E64iJve473OTH4+DIFcehr4GrHH65XHxEBLlvxf6GzcR5T6F5v+AHYxCkMvAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380^sys_idNOT IN20b107a683c3d2101bbe9065eeaad359,e8b107a683c3d2101bbe9065eeaad35c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>20b107a683c3d2101bbe9065eeaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380_current_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:18:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:18:17</sys_created_on>
+        <sys_id>e8b107a683c3d2101bbe9065eeaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380_table_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:18:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7ed33e668383d2101bbe9065eeaad380"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>A flow to Notify Trainers by email When a Student Creates a Goal or Goal Task, so they are aware and can go and check it out.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>notify_trainers_when_a_student_creates_a_goal_or_goal_task</internal_name>
+        <label_cache>[{"name":"70077da5-9933-4a99-aac0-59ebe1f23586.item","label":"2 - For Each➛Group Record","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"62d24bb0-8d65-42ef-a089-839a323b9255":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"70077da5-9933-4a99-aac0-59ebe1f23586.item.email","label":"2 - For Each➛Group Record➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email","usedInstances":{"62d24bb0-8d65-42ef-a089-839a323b9255":["ah_to"]}},{"name":"b6d577be-f4a6-43d8-8d1e-6e58dc996727.Records","label":"1 - Look Up Records➛Group Records","reference":"sys_user_group","reference_display":"Group","type":"records","base_type":"records","usedInstances":{"b161f44d-dd7f-45de-bed0-3ae6140dd4de":["condition"],"70077da5-9933-4a99-aac0-59ebe1f23586":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Notify Trainers When a Student Creates a Goal or Goal Task</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Notify Trainers If Student Creates Goal">7ed33e668383d2101bbe9065eeaad380</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63f24fe683c3d2101bbe9065eeaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_variable_value action="delete_multiple" query="document_key=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=63f24fe683c3d2101bbe9065eeaad301^sys_idNOT IN67f24fe683c3d2101bbe9065eeaad302"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>63f24fe683c3d2101bbe9065eeaad301</id>
+        <name>Notify Trainers When a Student Creates a Goal or Goal Task</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>67f24fe683c3d2101bbe9065eeaad302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=67f24fe683c3d2101bbe9065eeaad302"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=63f24fe683c3d2101bbe9065eeaad301^sys_idNOT IN7ff24fe683c3d2101bbe9065eeaad30f,abf24fe683c3d2101bbe9065eeaad303"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Trainers When a Student Creates a Goal or Goal Task">63f24fe683c3d2101bbe9065eeaad301</model>
+        <model_id>63f24fe683c3d2101bbe9065eeaad301</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_63f24fe683c3d2101bbe9065eeaad301</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>7ff24fe683c3d2101bbe9065eeaad30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7ff24fe683c3d2101bbe9065eeaad30f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Trainers When a Student Creates a Goal or Goal Task">63f24fe683c3d2101bbe9065eeaad301</model>
+        <model_id>63f24fe683c3d2101bbe9065eeaad301</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_63f24fe683c3d2101bbe9065eeaad301</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>abf24fe683c3d2101bbe9065eeaad303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=abf24fe683c3d2101bbe9065eeaad303"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=63f24fe683c3d2101bbe9065eeaad301^sys_idNOT IN37f24fe683c3d2101bbe9065eeaad31e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Trainers When a Student Creates a Goal or Goal Task">63f24fe683c3d2101bbe9065eeaad301</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>37f24fe683c3d2101bbe9065eeaad31e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+Va33OjNhD+Vxie2pl0hh+2MXm7Ork2M9dLz/G1D5lUI0CymcrCBUHi3uR/78oIjDE42M717NyLZ5DE7n6rb78VGt9/0Rn2CNMv9Qn2GNEv9JALEnPMJssFgWEhhxHHczk3xzzAIoqX+qWIU3KhR3FAYv3SvNAzzFJyt0xuAngJlq7eUK/rahqen5DZH9g9a4gWJE4i8IOmEWYJLAnCZMHw8g+18hc1vMAxmBLSzRfdn4UsiAnXL+8fIFTpy6c+di1i+LZpW5ZhWMOe6Q1sz7QCGxPDABN1iLXYRAPSNTDyJAgPCLiiEBBpSEJMcHDL2bJcMYMc5lmY46ck/BesDw25jhKI3Sf5XPmIFPJ82J9FoU9uFyKMeD6Sx5lPRiyd8495/DJnhOKUiSJnMJImYI8sZMgyCBURvZtFj+PC4fuQr9CpSRb5mJVPWIg49FJBEplwGjJIPcpzk0RpvIp+fD26HV+hP99NRr9ej9H4+m4yvhlNrq/05xUu9E8qLeYRqlhQDue53Oj3IWFyA1XGEz8OF+KdL8KMqGCeL9b0jFMOFlC5G1tEzfNWJvBDmAD8e0BQJGdlEubpB2VynHItgn2DH81PY0iN0ApO0Js5nqqU0t8LCq5SotiT4RihOUqWCZqlHoKkTaeQqZAvUoEcd+iaA9xCSsffSMyqNsD0va4/PMu9Ioz4osI4+jmpPv0WJknIp5UklRglIbchluiAuVqRwRxqcl5YHzbKTy0qatUwWmVomz1ZjRU19ekgPKZJqUeoZTgStWnYHjUNx+hjGtiG4VsV4dl23xqXqLG5Cm6XFKmRLlrU21OLklUdsQ5VU09qEXy1kDtRMtvks7Jjyf1Xkjc6wdBq0m3vpd0lEfPhq00+7oL2ypKPgwzDG0GBsYukdxDvxxnhKCFCyHLeX705lMnqHZw7qYic5LsmE0SjWPsY8Z9u1uu0OwICAnGelcxVJb0LaDAWa28KtReJWb2RSaQ/w/gGUlmkLXv+HfW2WnFlm1k8oLeR3rDvUtt3ADN0M9ojHjZ7Vh+7zsCmbq231dy3B3by3a2jlmStqtTUV7rWatZY8mWHqXWqQ8qhRgxl2n6hr36/STmqoxfV19rQDwn2PJo9ZdEjcOCAPu9h/+9pHKU82JJ/sKmFXFuv0H5Quf3xvJS+2uiAA2Q33s0V54PymH625k9RnJgvD+pkNjU9l/SIAR9nNnQyr++6no8tSp2BQyyz1snWjhujOfn+1aFQsqZKa/scaiRh1sTdPb7Rvn2AR+m6omKjrOdzpy/So4gHocg7bF2ii6lEP7CC/YrxYiv+uv60Xb/54EslPBhgHJA20fJopYSrsBqCEQ0Iv0oJG9/ouje/kD6YaPMoIOxqbU7f6B4yW4+YiwSJCOEgQJU8dmRmjm2PCwPAFx91ayAdExTRane9ijSY0MCJFlJNYSSB5i01MSMgJQxEBRxq0vuZfUVWzxbbyMtD95vGnYvw1t0BDK+QnRewo68FaiV07IGKBA7u922n+WrArR+omkJ4IcKTP2TtrR9Zkxzt/Cjez27dZuNncYX+mxzoeAvwhlF/teNgQxSnfzbcrEsmm+pW552yMCDF3Cvok7KUrXVof2WiQ9fvm06LMg37rcqknO8KTDTA/l9OjrIBKeY0KdTnfOq0/jTwWpx8+A/v4r5PnyIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=63f24fe683c3d2101bbe9065eeaad301^sys_idNOT IN7bf24fe683c3d2101bbe9065eeaad31c,7ff24fe683c3d2101bbe9065eeaad31d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Trainers When a Student Creates a Goal or Goal Task">63f24fe683c3d2101bbe9065eeaad301</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>7bf24fe683c3d2101bbe9065eeaad31c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <ui_id>b6d577be-f4a6-43d8-8d1e-6e58dc996727</ui_id>
+        <values>H4sIAAAAAAAA/+VYbU/jOBD+K1Y+FV3VTSlvx366hWOFxNtSbqUTiyIncVrfuk7WdigF9b/f+C1J28C1UldidXwBj2fs5xnPY0+4fwloGhwHR9leGOL+/tFhGA4GYXhwMEhwP44HB0kcxntx0A04nhDwVDhmBIaPmJV6LGcyKiUR0UjkZQETKZUFw7Ovbv6zMydjylJBeHB8/9ANCixgOUVEcPyyNLUuHoZjwsD1zgFawqdmRTWMzJy1XTTD0JWdyEWqoYTdgDwpwlMCGDLMJOkGE8xTrHIxqyyC4PSas9owplzBioF2fpL0GfY9CrVfRoBVQuxcNYxchqw5O8UKD5UoE1UK55qMc5oQafORkgyXTJ00bdbhulA05zbE0rbROSsn/MqmI6gW8AcCFjivKCWFJqqROxrZcJxPbz3KM8pNTtwkyxPMqhFWStC4VBrPS0AYmcBC0QQXBeWjqBD5IzXBgGXSGzEY9DKWT2FTSUe8hxMNvAd5xb0zsJ8a81csqGZxCctAMACiDCokskco81KYVD5GCSulmRCYS7tWMO/qSjxhWMqaOaQ8+lFq3DYPjnFkk6ZDEkEL9Qcs8UgcuXl3LUnsh3XJJTlPqUYhG7rQc99KCE1vTm/QncCUEyFX9fGq3zYFY9B6wZw04bZRcNJZsV20LeCk09+adIDHryQe2Pz9aWdzNdgUtEvCG03p1WcPozedg05WcoMWkSeSAOMO5UWpZBflpdJ/7KCXbxzBzyMWyLwfGi2ycjC/dg+1Koaq1EiltXxEHz6gWwJVkBA0pWqMZnA3IEgMkPO+djlk1FVtod+pCyqV3+H+4ePS/n6Gkyn6rHN/SxKo8I7defGts7Ydt4Qx9XCafimJmLkAL+7dw27NbzHih3HXNmsFbidjknxHNENqTBws8gSwpfWAiY6N5SC5zk6VxZrJ2jQmZBITscjEYlum0qDsuPT0OjRdClvm4znljJFEmSNA56cSZSKfNAhaILKOmcIdRzTRNpb6xx9mryjlWPtpQ0/lcB2AkCCggWtu/5w3kvyphDvUALA0zq+QfW/qihBEgvQXy9GVYH0SFQxG+Ahq0XgTFC7gbVvJb2tH6Lea0D855S7r3cWjmSMCEltz5eGflzd3fzc0c4YZi7EtLZ6b/STCgqAsL3m6mqKFOjQHNx3nKIFLXBGbOmHKClGJKDeGBfXVmXQxn2Z/wSrDmTxPPeKkFHBlqp7ziOJZ4wgNanCHgkH5f8Kw27mrpUelx+J2spnqUQ7tA9ylnVVMO+5mgbcE2MC97rjPTJIcQ8dsvgPwgvm8aheSwzcf4P36rZW5UJF9Zxr9wmpnsHEPsAYE3wNc61cbxbPXULkWIKOEpW3d85meWOqed/+f3fO7bAAAUBrZ06OcQUupn3gAuuXOoKr+8O328/elOjPl1fiG1DYsk1UNYKRy9LyxEtaA45UwhL3RncXTAtH3wqZklvtgb3QCGGxNAIPd7QjgpaJZJbIl5/7rV5+m93/W/njZH0qwEdCftwlsoz37m+65O18V8GAjBTeLzc6cvlJzW/5MfkWR3Z95BYwh1O0XWf1GU5qOiKp3915prqaYfW+bdxUX+YMy9H7CJ/fem7I96NcSBaVE9kFvfnP34dNx9Q7pd615sytkDSw+HZf4CboGD6YVobtGQOlkZM6meY+cV1ZX5Htb/Jh+ty+pP6xWDfoz+yX+U7U9ITz8CzKOnkqQFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Trainers When a Student Creates a Goal or Goal Task">63f24fe683c3d2101bbe9065eeaad301</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>70077da5-9933-4a99-aac0-59ebe1f23586</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>7ff24fe683c3d2101bbe9065eeaad31d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <ui_id>62d24bb0-8d65-42ef-a089-839a323b9255</ui_id>
+        <values>H4sIAAAAAAAA/+2X23LbNhCGXwXltaxQog6me+Va4yQzzmFiTTqdOKMBQVBCDQIsAFpRPXqXPkufrAsSEinJkSVbae2pL7k4/bv8Pyz55dZjsXfideJjvxclHdz3g3bg+8ftMIyCMPGP+6HfIrHX8AROKcxUlEhln28wz23g9rbv+/1+jLtHYRgERx0chkcYE/+oG9KItpJ20D3uNZmh6XwO62KmM45nn91yiJAJ47Giwjv58rXhZVjBSYYq7+R2bWhXqRxHlMPUIVZjatCnheT1FMwss8+xJHlKhRmxRfDCbTBwI+jtAEZgkVXlNzz6zVARU5CTYK5pw0uxiLGRaraMKIrjD4JXgQkTBrY81VoShg3VyEwooilmHE2ZmSCMSmFNz+73TbM/QVzQtlslFGpArFYmCItBkVcLj1xJYfhtNZwMsMGXRuXE5GpZackI1WU1Y5rgnJuzeqyc8CEzTIpyicERX6yWPE/F+7KI3nKD2pvMNYihma2NTRYOh8STy4mcflqIPWeiqKKrCpcE8+VTckmxIpNzRrl91SJPI5jb8LAxikW5sTLBFBxmVeeMCqn2LJhJOS1eZYqzjInxKFPyhhUHgvy0Oebw0Ey4nMJ6zcaiiYnNtQlvDzfPIT4owp+xYjbxd7ANLJ43PD3TZxxrXaUP9R/9kVv1ZTFW5djVo8JwdjFRLDOncNQNdcnOGw69VrjNz3Gn8m1tzwo/0DWCsqvRWMk82+TrtQvvB9kOoirIrEHuFukA24hd1Nei9+WAw6u1J16lyRxdQ0DKlNSXMCHj5C2JOvZXifoOSU+DoCUXOyO0isqPwQFMokelp11uxeEPwOQ+OPxeL4p6UbcfVD4MSRL3o6SH+ySofDeFK1WlWF2Piiu1RkhrEwp3WezHxA5aFkzANczzmKJfF6K26XSQRFLCvSbWCQGlr86L6i4JaT+qAZXWREYieJl8Bm1nKckGq6ZkJtggppGGt9VEQ4mYy6q2ooFmMkdprg1MMzCyAt9KJ+s8Xe6cHVx0cKdXngWYhwewu70R4MrYeDIy8mHfhc3CcPM52iT1gbvsR/YOSS67ndzM2AGs4f2K8Rq/l4ugYzfYzm7ZzDbQrTUv/+li9FwoscI5S1lhiJLvw4MTb/UU9VdsREgNnAP8I+1w+MLQZ2ebSvYxdOdhzejF0c/O0a2tP960t+Kj6NCW3uH0haV/WfN0tLepuy+m/p+YurvdVmTFSDqPfqfE1Ix9irTJ7WmIgBsMjeETWNApGkvMf9p0/X3T9/xsuV/7AonLpfK7stkHjd7LB8x/TsbhMcBbrZS0V+9TGc9qDFzlvh+QDFnNR4aJWUqoktJEUJjrYjC+8q7KafQN5VyiocJMUKUb5dpIoVfl8Prz94D5OPiIXlto7LR2T0Q6+/k3+BMlWCAhLVAIPInIhJJrxAySuWned9ZwgsX1piR71JDitIy/ysroJtuuDD8mzb//+rez2+8q2sE/y+5cumfDTu4SmpiUr11Bb4bvLqoLqP/I3tzrdoPeyxX06OacTeN2rGSWudwO3KC//gPPn2FXmxoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=63f24fe683c3d2101bbe9065eeaad301^sys_idNOT IN37f24fe683c3d2101bbe9065eeaad31b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a8b107a683c3d2101bbe9065eeaad378</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Trainers When a Student Creates a Goal or Goal Task">63f24fe683c3d2101bbe9065eeaad301</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>37f24fe683c3d2101bbe9065eeaad31b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <ui_id>70077da5-9933-4a99-aac0-59ebe1f23586</ui_id>
+        <values>H4sIAAAAAAAA/51TTW+jMBD9Lz4TxEdKPm5Vq0qVdrdSWvWyqqLBHhJrjc3aJimL+O87DoRWPfYE8zzz5r2H6ZlpfdN692JunZMHzba/3yImdcDovWcaamRbJj3WjkXsBKoNdd+XhbhZrUpcVEsoFstcrBdrkeKiwJu14JtNscpW8Q65scINA40K6RoF3ev3GfhRKmFxEtmAJW0eLdv2X46koAXpRlSbNNnwPCvyLEmy9TIti7xMM5EDioIIFZSoqPVxcvfFrO+aUNpRwgT8mGZ2M0qPICJLIobvHrVAWl+BchixGrQAb2zHtt62BFgE8aRVN3ccpfZEx0Lvu5P/aGOaJKGxQjLEcTycy/2U4whX9+Dhmai5b+3Uyo9GcnRjFAIraJW/+4yNDU+Nl0aPIx5KdZ02qq31rzEJNhNcPxshrSMR2ASjQfrko3o+mvPuqvJB6kso06EyHNRcgfdWlq0PenqGCmsi2tfQNFIf9o01J3kZJi11fFBUxJUyZ1oarmgMPAiPKVeIHwi/v8CvYGVw8ZNoaHiImOvcnQLnPrxQiPu/bVAyOps87McYwgi3svG3tOCEk9zhLdz6kXvOlEtHEl4C9nj9V8JBRzdI8s/Q2dg/QfwHNvwHF1VPBHUDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_63f24fe683c3d2101bbe9065eeaad301^sys_idNOT IN37f24fe683c3d2101bbe9065eeaad30d,73f24fe683c3d2101bbe9065eeaad314"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_63f24fe683c3d2101bbe9065eeaad301</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>37f24fe683c3d2101bbe9065eeaad30d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_63f24fe683c3d2101bbe9065eeaad301</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:57</sys_created_on>
+        <sys_id>73f24fe683c3d2101bbe9065eeaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_63f24fe683c3d2101bbe9065eeaad301"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>7ed33e668383d2101bbe9065eeaad380</sys_id>
+        <latest_snapshot>63f24fe683c3d2101bbe9065eeaad301</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7ed33e668383d2101bbe9065eeaad380^sys_idNOT INbff24fe683c3d2101bbe9065eeaad33b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"bff24fe683c3d2101bbe9065eeaad33b","name":"plan","plan_signature":null}}</plan>
+        <plan_id>7ed33e668383d2101bbe9065eeaad380</plan_id>
+        <snapshot>f0644b6a83c3d2101bbe9065eeaad395</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-15 12:23:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bff24fe683c3d2101bbe9065eeaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-15 12:23:58</sys_updated_on>
+        <trigger display_value="">3ff24fe683c3d2101bbe9065eeaad339</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7ed33e668383d2101bbe9065eeaad380"/>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 14:43:37</sys_created_on>
+        <sys_id>0ce6d29683471210db611c29feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1563428_personal_feedback.x_1563428_personal.pdp_admin</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_security_acl display_value="x_1563428_personal_feedback">90792d9ec38fd210554f98bc050131b0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0ce6d29683471210db611c29feaad349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 14:43:37</sys_updated_on>
+        <sys_user_role display_value="x_1563428_personal.pdp_admin" name="x_1563428_personal.pdp_admin">3ae54dca838312105266c396feaad349</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

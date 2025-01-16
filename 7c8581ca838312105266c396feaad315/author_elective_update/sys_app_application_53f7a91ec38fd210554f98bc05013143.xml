@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Goal Task</name>
+        <order>100</order>
+        <roles>x_1563428_personal.goal_tasks_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 11:07:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53f7a91ec38fd210554f98bc05013143</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Goal Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_update_name>sys_app_application_53f7a91ec38fd210554f98bc05013143</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 11:07:52</sys_updated_on>
+        <title>Goal Task</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</application>
+        <file_path/>
+        <instance_id>9548458bdb86f19002022a59139619be</instance_id>
+        <instance_name>dev195360</instance_name>
+        <name>sys_app_application_53f7a91ec38fd210554f98bc05013143</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Goal Task</name><order>100</order><roles>x_1563428_personal.goal_tasks_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-14 11:07:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>53f7a91ec38fd210554f98bc05013143</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Goal Task</sys_name><sys_overrides/><sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package><sys_policy/><sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope><sys_update_name>sys_app_application_53f7a91ec38fd210554f98bc05013143</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-14 11:07:52</sys_updated_on><title>Goal Task</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-700117020</payload_hash>
+        <record_name>Goal Task</record_name>
+        <reverted_from/>
+        <source>e764d94ec38b9210554f98bc05013126</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 11:07:52</sys_created_on>
+        <sys_id>a7f7a91ec38fd210554f98bc05013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194647f9f1d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 11:07:52</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>abf7a91eb98fd21098860760a3a3b045</update_guid>
+        <update_guid_history>abf7a91eb98fd21098860760a3a3b045:-700117020</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">08dce152c3cfd210554f98bc05013133</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 11:28:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>5b908aa5f110405ca8e8e0a8f9f2c7c4</sys_id>
+        <sys_metadata>53f7a91ec38fd210554f98bc05013143</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Goal Task</sys_name>
+        <sys_package display_value="Personal Development Plan" source="x_1563428_personal">7c8581ca838312105266c396feaad315</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Plan">7c8581ca838312105266c396feaad315</sys_scope>
+        <sys_scope_delete display_value="">058642f3d3b34b4687af8f490b6f81c9</sys_scope_delete>
+        <sys_update_name>sys_app_application_53f7a91ec38fd210554f98bc05013143</sys_update_name>
+        <sys_update_version display_value="sys_app_application_53f7a91ec38fd210554f98bc05013143">a7f7a91ec38fd210554f98bc05013146</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 11:28:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
